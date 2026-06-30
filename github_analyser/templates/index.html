@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Analyzer</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🔍 GitHub Profile Analyzer</h1>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="username"
+                placeholder="Enter GitHub Username">
+
+            <button onclick="analyzeUser()">
+                Analyze
+            </button>
+        </div>
+
+        <div id="loading" class="loading">
+            Analyzing GitHub Profile...
+        </div>
+
+        <div id="error" class="error"></div>
+
+        <!-- Profile Card -->
+        <div id="profileCard" class="profile-card" style="display:none;">
+
+            <img id="avatar" class="avatar">
+
+            <h2 id="name"></h2>
+
+            <p id="bio"></p>
+
+            <p><strong>Company:</strong> <span id="company"></span></p>
+
+            <p><strong>Location:</strong> <span id="location"></span></p>
+
+            <p>
+                <a id="profileLink" target="_blank">
+                    View GitHub Profile
+                </a>
+            </p>
+
+        </div>
+
+        <!-- Statistics -->
+        <div id="stats" class="stats" style="display:none;">
+
+            <div class="card">
+                <h3>Followers</h3>
+                <h2 id="followers"></h2>
+            </div>
+
+            <div class="card">
+                <h3>Following</h3>
+                <h2 id="following"></h2>
+            </div>
+
+            <div class="card">
+                <h3>Repositories</h3>
+                <h2 id="repos"></h2>
+            </div>
+
+            <div class="card">
+                <h3>Stars</h3>
+                <h2 id="stars"></h2>
+            </div>
+
+            <div class="card">
+                <h3>Forks</h3>
+                <h2 id="forks"></h2>
+            </div>
+
+        </div>
+
+        <!-- AI Score -->
+        <div id="scoreCard" class="score-card" style="display:none;">
+
+            <h2>🧠 AI Developer Score</h2>
+
+            <h1 id="score"></h1>
+
+            <h3 id="badge"></h3>
+
+        </div>
+
+        <!-- Charts -->
+
+        <div class="chart-box">
+
+            <canvas id="pieChart"></canvas>
+
+        </div>
+
+        <div class="chart-box">
+
+            <canvas id="barChart"></canvas>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
