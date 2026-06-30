@@ -110,10 +110,7 @@ Add screenshots of your application here.
 ### Home Page
 
 <img width="1920" height="1080" alt="Screenshot (510)" src="https://github.com/user-attachments/assets/3d45e2f4-a894-490a-96a7-9379c30660c3" />
-<img width="1920" height="1080" alt="Screenshot (509)" src="https://github.com/user-attachments/assets/e2b71e4c-2d1c-49b0-819a-37a12e932d20" />
 
-<img width="1920" height="1080" alt="Screenshot (501)" src="https://github.com/user-attachments/assets/84169fac-989f-456c-b163-48461c3d0c32" />
-<img width="1920" height="1080" alt="Screenshot (511)" src="https://github.com/user-attachments/assets/b62073ba-7361-41fc-8745-a036d6aabad2" />
 
 
 ## 📊 Key Insights Provided
